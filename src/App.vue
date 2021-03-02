@@ -8,12 +8,26 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
+
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created : function(){
+    console.log(" == export created == ");
+    
+    this.myFuncTest();
+  },
+  methods : {
+    myFuncTest : function(){
+      console.log(" myFuncTest ");
+    }
   }
+
 }
+
+
 </script>
 
 <style>
